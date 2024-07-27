@@ -1,0 +1,45 @@
+@import "../abstracts/colors";
+@import "../abstracts/mixins";
+
+.card {
+  @include flexbox(flex, center, start, column);
+
+  &__image {
+    width: 100%;
+    padding: 32px 0;
+    margin-bottom: 24px;
+    background-color: $gray;
+    @include flexbox(flex, center, center, row);
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  &__name {
+    font-size: clamp(1rem, 0.9697rem + 0.1294vw, 1.125rem);
+    font-weight: 500;
+    line-height: 125%;
+    text-align: start;
+    color: $dark;
+
+    margin-bottom: 12px;
+  }
+
+  &__model {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 110%;
+    color: $brand-color;
+
+    margin-bottom: 24px;
+  }
+
+  &__price {
+    color: $dark;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 110%;
+  }
+}

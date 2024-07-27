@@ -1,0 +1,82 @@
+@import "../abstracts/colors";
+@import "../abstracts/mixins";
+
+
+.header {
+  @include flexbox(flex, center, center, column);
+
+  &__freight {
+    @include flexbox(flex, center, center, row);
+    height: 39px;
+    width: 100%;
+    background-color: $gray;
+
+    p {
+      font-size: clamp(0.875rem, 0.7233rem + 0.6472vw, 1.5rem);
+      font-weight: 500;
+      line-height: 100%;
+    }
+
+    @media (width >= 768px) {
+      height: 41px;
+    }
+
+    @media (width >= 992px) {
+      height: 64px;
+    }
+  }
+
+  &__banner {
+    width: 100%;
+    min-height: 350px;
+    background-image: url("../img/image-michael-jordan.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    @include flexbox(flex, center, center, column);
+
+    @media (width >= 768px) {
+      background-position: top;
+      background-size: cover;
+    }
+
+    @media (width >= 992px) {
+      height: 400px;
+    }
+  }
+  
+  &__content {
+    @include container();
+    color: $white;
+  }
+
+  &__logo {
+    max-width: 142px;
+
+    @media (width >= 992px) {
+      max-width: 203px;
+    }
+  }
+
+  &__title {
+    font-size: clamp(1.5rem, 1.3786rem + 0.5178vw, 2rem);
+    font-weight: 500;
+    line-height: 110%;
+
+    margin: 40px 0 12px;
+
+    @media (width >= 992px) {
+      margin: 50px 0 20px;
+    }
+  }
+
+  &__description {
+    font-size: clamp(1rem, 0.8786rem + 0.5178vw, 1.5rem);
+    font-weight: 400;
+    line-height: 130%;
+
+    max-width: 38ch;
+  }
+}
