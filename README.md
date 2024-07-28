@@ -9,10 +9,13 @@ Este projeto é uma página web para exibir os Jordans em um layout parecido com
 ## Link para preview
 [Ver projeto](https://gilecampos.github.io/codelab-jordan02/)
 
+![mockup-jordan](https://github.com/user-attachments/assets/647c9c05-0c55-45cb-9894-ba19c6a8b0d7)
+
 ### Tecnologias Utilizadas
 
 - **HTML**: Estrutura básica da aplicação.
 - **CSS**: Estilização da aplicação.
+
 - **SASS**: Estilização da aplicação.
 
 ### Estrutura do Projeto
