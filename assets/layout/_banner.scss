@@ -1,31 +1,25 @@
 @import "../abstracts/colors";
 @import "../abstracts/mixins";
 
+.freight {
+  @include flexbox(flex, center, center, row);
+  padding: 12px 0;
+  width: 100%;
+  background-color: $gray;
 
-.header {
-  @include flexbox(flex, center, center, column);
-
-  &__freight {
-    @include flexbox(flex, center, center, row);
-    height: 39px;
-    width: 100%;
-    background-color: $gray;
-
-    p {
-      font-size: clamp(0.875rem, 0.7233rem + 0.6472vw, 1.5rem);
-      font-weight: 500;
-      line-height: 100%;
-    }
-
-    @media (width >= 768px) {
-      height: 41px;
-    }
-
-    @media (width >= 992px) {
-      height: 64px;
-    }
+  p {
+    font-size: clamp(0.875rem, 0.7233rem + 0.6472vw, 1.5rem);
+    font-weight: 500;
+    line-height: 100%;
   }
 
+  @media (width >= 992px) {
+    padding: 19px 0;
+  }
+
+}
+.header {
+  @include flexbox(flex, center, center, column);
   &__banner {
     width: 100%;
     min-height: 350px;
